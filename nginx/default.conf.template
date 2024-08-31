@@ -1,0 +1,4 @@
+server {
+    listen ${BIND_PORT};
+    proxy_pass ${REMOTE_ADDR};
+}
