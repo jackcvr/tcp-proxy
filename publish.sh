@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
-docker push jackcvr/tcp-proxy:latest
-docker push jackcvr/tcp-proxy:nginx
-docker push jackcvr/tcp-proxy:socat
+NAME=jackcvr
+
+docker push $NAME/tcp-proxy:latest
+docker push $NAME/tcp-proxy:nginx
+docker push $NAME/tcp-proxy:socat

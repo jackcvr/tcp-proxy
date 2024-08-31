@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
-docker build -t jackcvr/tcp-proxy:nginx nginx/
-docker tag jackcvr/tcp-proxy:nginx jackcvr/tcp-proxy:latest
-docker build -t jackcvr/tcp-proxy:socat socat/
+NAME=jackcvr
+
+docker build -t $NAME/tcp-proxy:nginx nginx/
+docker tag $NAME/tcp-proxy:nginx $NAME/tcp-proxy:latest
+docker build -t $NAME/tcp-proxy:socat socat/
